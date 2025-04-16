@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3615","getListUsers()","","Wed Apr 16 09:45:12 GMT 2025","passed","Wed Apr 16 09:45:16 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","getListUsers"
+"","245","singleUserNotFound()","","Wed Apr 16 09:45:16 GMT 2025","passed","Wed Apr 16 09:45:16 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","singleUserNotFound"
+"","434","updateUser()","","Wed Apr 16 09:45:16 GMT 2025","passed","Wed Apr 16 09:45:16 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","updateUser"
+"","76","getSingleUserSuccess()","","Wed Apr 16 09:45:16 GMT 2025","passed","Wed Apr 16 09:45:16 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","getSingleUserSuccess"
