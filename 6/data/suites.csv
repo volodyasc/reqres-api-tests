@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2810","Получение списка пользователей","","Thu Apr 17 22:35:33 GMT 2025","passed","Thu Apr 17 22:35:36 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","getListUsers"
+"","240","Запрос инфо о несуществующем пользователе, 404","","Thu Apr 17 22:35:36 GMT 2025","passed","Thu Apr 17 22:35:36 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","singleUserNotFound"
+"","60","Получение инфо о пользователе","","Thu Apr 17 22:35:36 GMT 2025","passed","Thu Apr 17 22:35:36 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","getSingleUserSuccess"
+"","351","Обновление пользователя","","Thu Apr 17 22:35:36 GMT 2025","passed","Thu Apr 17 22:35:36 GMT 2025","","api.tests.ReqresInTests","api.tests.ReqresInTests","updateUser"
