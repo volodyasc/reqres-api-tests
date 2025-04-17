@@ -1,5 +1,6 @@
 package api.specs;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
@@ -11,6 +12,7 @@ import static io.restassured.RestAssured.with;
 public class BaseSpec {
 
     public static RequestSpecification commonRequestSpec = with()
+            .filter(new AllureRestAssured())
             .log().uri()
             .log().headers()
             .log().body()

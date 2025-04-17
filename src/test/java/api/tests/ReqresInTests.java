@@ -5,6 +5,11 @@ import api.model.request.User;
 import api.model.response.ListUsersResponse;
 import api.model.response.UpdateUserResponse;
 import api.model.response.UserResponse;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -51,12 +56,20 @@ public class ReqresInTests {
         }
     }
 
-    @Test
+    @Tag("api")
+    @Owner("Shchepkin V")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Получение инфо о пользователе")
+    @Test()
     void getSingleUserSuccess() {
         UserResponse userResponse = getUserById(2);
         assertEqualsUserParams(userResponse);
     }
 
+    @Tag("api")
+    @Owner("Shchepkin V")
+    @Severity(SeverityLevel.MINOR)
+    @DisplayName("Запрос инфо о несуществующем пользователе, 404")
     @Test
     void singleUserNotFound() {
         given(commonRequestSpec)
@@ -66,13 +79,20 @@ public class ReqresInTests {
                 .statusCode(404);
     }
 
+    @Tag("api")
+    @Owner("Shchepkin V")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Получение списка пользователей")
     @Test
     void getListUsers() {
         ListUsersResponse listUsersResponse = getUsersByPage(2);
         assertEqualsUsersParams(listUsersResponse);
 
     }
-
+    @Tag("api")
+    @Owner("Shchepkin V")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Обновление пользователя")
     @Test
     void updateUser() {
         UpdateUser updatedUser = new UpdateUser();
