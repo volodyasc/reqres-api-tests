@@ -6,12 +6,12 @@ repository is a sample test arch for API reqres.in
 
 [Tech stack](#tech-stack)  
 [Run Tests Locally via Gradle](#-run-tests-locally-via-gradle)  
-[Run Tests Remotely in Github Actions](#-run-tests-remotely-in-github-actions)  
+[Run Tests Remotely in GitHub Actions](#-run-tests-remotely-in-github-actions)  
 [Allure report](#allure-report)
 
 ## Tech stack
 
-Technologies and tools user in the project.
+Technologies and tools used in the project.
 
 <p align="center">
 <img height="40" width="40" src="images/logo/intellij-original.svg">
@@ -25,13 +25,13 @@ Technologies and tools user in the project.
 
 > Automated tests are written in `Java` using the `Rest Assured` framework.
 >
-> `Github Actions` orchestrate the execution and delivery of tests.
+> `GitHub Actions` orchestrates the execution and delivery of tests.
 >
-> `Allure` provide reports
+> `Allure` provides test reports.
 >
-> `gradle` is used to automate the project build process
+> `Gradle` is used to automate the project build process.
 >
-> `junit` is used as a testing framework
+> `JUnit` is used as a testing framework.
 
 ## <img height="40" width="40" src="images/logo/powershell.svg"> Run Tests Locally via Gradle
 
@@ -42,15 +42,19 @@ To execute test run, run the following command in the terminal:
 ./gradlew clean api allureReport allureServe
 ```
 
-## <img height="40" width="40" src="images/logo/github.svg"> Run Tests Remotely in Github Actions
+## <img height="40" width="40" src="images/logo/github.svg"> Run Tests Remotely in GitHub Actions
 
-How to run tests remotely using Github Actions.
+How to run tests remotely using GitHub Actions.
 
-1. Open repository in your browser
+1. Open repository in your browser.
 
-2. Open Actions TAB
+2. Open Actions TAB.
 
-3. Select Run workflow on Build Actions
+3. Select Workflow
+
+4. Select Run workflow on Build Actions.
+
+![ghactions.png](images/screens/ghactions.png)
 
 > [!TIP]
 > You may configure build triggers in `build.yml`.
@@ -70,17 +74,23 @@ run build on PR and push to main branch
       "main"
 ```
 
-## Allure report
+## <img height="40" width="40" src="images/logo/allure.svg"> Allure report
 
 ### Generate and Open Allure Report via local host
 
-Allure reports is generating and open with commands
+Allure reports are generated and opened using the following command:
 ```
 allureReport allureServe
 ```
 
-### Open Allure report via Github Actions
+### Open Allure report via GitHub Actions
 
 Once the build is complete, open `Latest deployments` on github-pages deployments.
 
+![ghpagesdtone.png](images/screens/ghpagesdtone.png)
+![ghpagesdttwo.png](images/screens/ghpagesdttwo.png)
+
 ### Allure report screenshot
+
+![allurerqone.png](images/screens/allurerqone.png)
+![allurerqtwo.png](images/screens/allurerqtwo.png)
